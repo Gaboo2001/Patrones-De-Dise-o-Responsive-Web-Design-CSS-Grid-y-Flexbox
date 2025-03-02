@@ -39,3 +39,11 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .tres-columnas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /*Es mejor esta sintaxi porque cuando quieres 6 columnas 
+        tendria que hacer el calculo*/ /*Esta sintaxis primero pide el numero de columnas y en cuantas fracciones*/
+        column-gap: 2rem;
+    }
+}

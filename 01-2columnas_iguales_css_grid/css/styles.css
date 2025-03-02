@@ -39,3 +39,16 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .dos-columnas {
+        display: grid;
+        grid-template-columns: 50% 50%; /*Creando las 2 columnas*/
+        /*
+        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        */ /*Esas tres lineas comentadas son lo mismo que la primer linea ahorita para mi me gusta mas la de 
+        el porcentaje porque ahi se ve cuantas columnas son y listo*/
+        column-gap: 2rem; /*Da la separacion entre columnas*/
+    }
+}
